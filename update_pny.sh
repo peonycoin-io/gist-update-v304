@@ -45,7 +45,7 @@ function compile_node() {
   sleep 7
   
   echo -e "Remove the old $COIN_NAME wallet from the system"
-  rm -f /usr/local/bin/func* >/dev/null 2>&1
+  rm -f /usr/local/bin/pny* >/dev/null 2>&1
   rm $CONFIGFOLDER/banlist.dat >/dev/null 2>&1
   rm $CONFIGFOLDER/mnpayments.dat >/dev/null 2>&1
   rm $CONFIGFOLDER/fee_estimates.dat >/dev/null 2>&1
@@ -70,7 +70,7 @@ function compile_node() {
   tar xvzf $COIN_ZIP --strip=2 ${COIN_DIR}/bin/${COIN_NAME,,}d ${COIN_DIR}/bin/${COIN_NAME,,}-cli>/dev/null 2>&1
   compile_error
   rm -f $COIN_ZIP >/dev/null 2>&1
-  cp func* /usr/local/bin >/dev/null 2>&1
+  cp pny* /usr/local/bin >/dev/null 2>&1
   compile_error
   strip $COIN_DAEMON $COIN_CLI
   cd - >/dev/null 2>&1
