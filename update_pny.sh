@@ -4,7 +4,7 @@ CONFIG_FILE='pny.conf'
 CONFIGFOLDER='/root/.peony'
 COIN_DAEMON='/usr/local/bin/pnyd'
 COIN_CLI='/usr/local/bin/pny-cli'
-COIN_REPO='https://github.com/PeonyTeam/peony/releases/download/v3.0.3/pny-3.0.3-x86_64-linux-gnu.tar.gz'
+COIN_REPO='https://github.com/PeonyTeam/peony/releases/download/v3.0.4/pny-3.0.4-x86_64-linux-gnu.tar.gz'
 COIN_NAME='pny'
 COIN_PORT=16889
 
